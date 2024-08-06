@@ -1,0 +1,96 @@
+:root {
+    --white: #FFF;
+    --black: #000;
+    --secondColor: #11A193;
+    --hightlight: #FFFC00;
+}
+  
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: 0;
+	font-weight: normal;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+ol, ul {list-style: none;}
+table {border-collapse: separate; border-spacing: 0;}
+caption, th, td {text-align: left; font-weight: normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+img, picture, video, embed {max-width: 100%;}
+*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+
+body {
+	color: var(--black);
+    font-family: "Inter", sans-serif;
+	background-color: var(--white);
+}
+
+a {color: var(--black); text-decoration: none;}
+    a:hover, a:hover img {        
+        animation: pulse;
+        animation-duration: 1s;
+    }
+	
+strong {font-weight: bold;}
+em {font-style: italic;}
+small {font-size: 0.7em;}
+sub, sup {font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+.text-right {text-align: right;}
+
+.img-button {cursor: pointer; background:none repeat scroll 0 0 transparent; border:medium none; padding:0; vertical-align:middle;}
+
+header {
+    padding: 2rem 0;
+    background-color: var(--secondColor);
+}
+#menu a {
+    color: var(--white); 
+    font-size: 1rem; 
+    margin-left: 1rem;
+    padding: 1rem 0.5rem;
+    display: inline-block;
+    border-radius: 14px;
+}
+    #menu a:first-child {margin-left: 0;}
+    #menu a:first-child {margin-left: 0;}
+    #menu a:nth-child(3), #menu a:nth-child(4), #menu a:nth-child(5) {
+        color: var(--secondColor);
+        margin-left: 1rem;
+        padding: 1rem 2rem;
+        border: solid 2px var(--white);
+        background-color: var(--white);
+    }
+        #menu a:nth-child(4):hover, #menu a:nth-child(5):hover {
+            color: var(--white);
+            background-color: var(--secondColor);
+        }
+    #menu a:nth-child(3) {
+        border: solid 2px var(--hightlight);
+        background-color: var(--hightlight);
+    }
+        #menu a:nth-child(3):hover {
+            border-color: var(--white);
+        }
+
+@media screen and (max-width: 991px) {}
+
+#banner {
+    width: 100%;
+    height: 770px;
+    background: url(../images/banner.png) no-repeat center 0 transparent;
+}
