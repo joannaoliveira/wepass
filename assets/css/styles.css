@@ -90,8 +90,14 @@ header {
 
 #banner {
     width: 100%;
-    height: 770px;
+    height: 770px;    
     background: url(../images/banner.png) no-repeat center 0 transparent;
+}
+    #banner img {display: none;}
+
+@media screen and (max-width: 1575px) {
+    #banner {height: auto; background-image: none;}
+        #banner img {display: inline;}
 }
 
 #sobre {padding: 5rem 0;}
