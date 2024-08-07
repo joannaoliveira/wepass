@@ -1,5 +1,15 @@
 $( document ).ready(function() {
 
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector("#menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+
     var behavior = function (val) {
         return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
     },
