@@ -2,6 +2,7 @@
     --white: #FFF;
     --black: #000;
     --secondColor: #11A193;
+    --thirdColor: #00FFDA;
     --hightlight: #FFFC00;
 }
   
@@ -35,7 +36,7 @@ img, picture, video, embed {max-width: 100%;}
 body {
 	color: var(--black);
     font-family: "Inter", sans-serif;
-	background-color: var(--white);
+	background-color: #F3F3F3;
 }
 
 a {color: var(--black); text-decoration: none;}
@@ -87,10 +88,54 @@ header {
             border-color: var(--white);
         }
 
-@media screen and (max-width: 991px) {}
-
 #banner {
     width: 100%;
     height: 770px;
     background: url(../images/banner.png) no-repeat center 0 transparent;
+}
+
+#sobre {padding: 5rem 0;}
+.sobre-video {position: relative;}
+    .sobre-video .txt {
+        width: calc(301px - 4rem);
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.2em;
+        top: 80px;
+        right: -190px;
+        padding: 1.6rem 2rem;
+        position: absolute;
+        border-radius: 20px;
+        background-color: var(--thirdColor);
+    }
+        .sobre-video .txt .img {text-align: right; margin-top: 0.5rem;}
+
+.box-sobre {
+    font-size: 1.2rem;
+    max-width: 764px;
+    padding: 6rem 4rem 4rem;
+    margin-top: 12rem;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.btn-contato {margin: 3rem 0 0 4rem;}
+    .btn-contato a {
+        color: var(--white);
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        transition: all 1s;
+        border: solid 2px var(--secondColor);
+        background-color: var(--secondColor);
+    }
+        .btn-contato a:hover {border-color: var(--thirdColor);}
+        
+@media screen and (max-width: 991px) {
+    .sobre-video {text-align: center;}
+    .sobre-video .txt {display: none;}
+    .box-sobre {padding-top: 4rem; margin-top: 4rem;}
+}
+@media screen and (max-width: 590px) {
+    .box-sobre {padding: 3rem;}
+    .btn-contato {margin-left: 3rem;}
 }
