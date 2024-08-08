@@ -267,3 +267,26 @@ sub {bottom: -0.25em;}
         #chamada .info .destaque {font-size: 1.6rem;}
         #chamada .info span {font-size: 1.2rem;}
 }
+
+#clientes {padding: 4rem 0;}
+    #clientes h2 {
+        max-width: 200px;
+        font-size: 1.6rem;
+        line-height: 1.6em;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+        #clientes h2 span {
+            font-weight: 500;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            background-color: var(--thirdColor);
+        }
+    #clientes .lista {
+        display: flex; 
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+        #clientes .lista img {margin: 1rem;}
