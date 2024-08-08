@@ -3,6 +3,7 @@
     --black: #000;
     --secondColor: #11A193;
     --thirdColor: #00FFDA;
+    --fourthColor: #00C6B8;
     --hightlight: #FFFC00;
 }
   
@@ -203,4 +204,66 @@ sub {bottom: -0.25em;}
 @media screen and (max-width: 590px) {
     .box-sobre {padding: 3rem;}
     .btn-contato {margin-left: 3rem;}
+}
+
+#chamada {
+    width: 100%;
+    margin-top: 7rem;
+    background: rgb(0,214,194);
+    background: linear-gradient(90deg, rgba(0,214,194,1) 0%, rgba(0,0,0,1) 100%);
+}
+    #chamada .container {top: -7rem; position: relative;}
+    #chamada .img {
+        text-align: center;
+        padding: 5rem 2rem;
+        padding-right: calc(2rem - 8px);
+        border-radius: 20px 0 0 20px;
+        background-color: var(--hightlight);
+    }
+    #chamada .info {
+        padding: 5rem 7rem;
+        border-radius: 0 20px 20px 0;
+        background-color: var(--white);
+    }
+        #chamada .info p {font-size: 1.4rem; line-height: 1.4em;}
+        #chamada .info span {
+            color: var(--white);
+            font-size: 1.6rem;
+            display: inline-block;
+            margin: 0.2rem 0;
+            padding: 0.2rem 2rem;
+            border-radius: 50px;
+            background-color: var(--fourthColor);
+        }
+        #chamada .info .destaque {
+            font-size: 2.3rem;
+            font-weight: 500;
+            margin: 2rem 0;
+        }
+
+#bg-chamada {
+    width: 100%;
+    height: 10px;
+    background: rgb(254,251,1);
+    background: linear-gradient(90deg, rgba(254,251,1,1) 0%, rgba(1,255,217,1) 100%);
+}
+@media screen and (max-width: 1200px) {
+    #chamada .info {padding: 5rem 2rem;}
+}
+@media screen and (max-width: 767px) {
+    #chamada {margin-top: 4rem;}
+        #chamada .container {top: -4rem;}
+        #chamada .img {display: none;}
+        #chamada .info {padding: 4rem; border-radius: 20px;}
+}
+@media screen and (max-width: 590px) {
+    #chamada .info {width: 90%; margin: 0 auto;}
+        #chamada .info p {font-size: 1.2rem;}
+        #chamada .info .destaque {font-size: 1.8rem;}
+}
+@media screen and (max-width: 460px) {
+    #chamada .info {padding: 3rem 2rem;}
+        #chamada .info p {font-size: 1.1rem;}
+        #chamada .info .destaque {font-size: 1.6rem;}
+        #chamada .info span {font-size: 1.2rem;}
 }
