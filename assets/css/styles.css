@@ -290,3 +290,25 @@ sub {bottom: -0.25em;}
         justify-content: space-between;
     }
         #clientes .lista img {margin: 1rem;}
+
+#footer {
+    width: 100%;
+    padding: 5rem 0;
+    background-color: var(--fourthColor);
+}
+    #footer .row {align-items: center;}
+    #footer .redes-sociais img {margin-right: 1rem;}
+    #footer .logo {text-align: center;}
+    #footer .endereco {
+        color: var(--white);
+        font-size: 0.9rem;
+        text-align: right;
+    }
+    
+@media screen and (max-width: 768px) {
+    #footer .logo {display: none;}
+}
+@media screen and (max-width: 360px) {
+    #footer .redes-sociais, #footer .endereco {width: 100%; text-align: center;}
+        #footer .redes-sociais img {margin: 0 0.5rem 2rem;}
+}
