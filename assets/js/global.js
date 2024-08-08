@@ -25,28 +25,28 @@ $( document ).ready(function() {
         return false;
     });
 
-    $("#frmCotacao").validate({
+    $("#frmContato").validate({
         rules: {
             iNome: "required",
-            iSobrenome: "required",
+            iWhatsapp: "required",
             iEmail: {
                 required: true,
                 email: true
             },
-            iWhatsapp: "required",            
-            iTpDivida: "required",            
-            iValor: "required"
+            iCidade: "required",            
+            iCondominio: "required",            
+            iLotes: "required"
         },
         messages: {
             iNome: "Campo obrigatório",
-            iSobrenome: "Campo obrigatório",
+            iWhatsapp: "Campo obrigatório",
             iEmail: {
                 required: "Campo obrigatório",
                 email: "Digite um e-mail válido"
             },
-            iWhatsapp: "Campo obrigatório",
-            iTpDivida: "Campo obrigatório",
-            iValor: "Campo obrigatório"
+            iCidade: "Campo obrigatório",
+            iCondominio: "Campo obrigatório",
+            iLotes: "Campo obrigatório"
         }
     });
 

@@ -1,6 +1,7 @@
 :root {
     --white: #FFF;
     --black: #000;
+    --gray: #EEEEEE;
     --secondColor: #11A193;
     --thirdColor: #00FFDA;
     --fourthColor: #00C6B8;
@@ -266,6 +267,63 @@ sub {bottom: -0.25em;}
         #chamada .info p {font-size: 1.1rem;}
         #chamada .info .destaque {font-size: 1.6rem;}
         #chamada .info span {font-size: 1.2rem;}
+}
+
+#contato {
+    width: 100%;    
+    position: relative;
+    background: linear-gradient(to bottom,  rgba(0,255,217,1) 0%,rgba(0,255,217,1) 80%,rgba(2,234,208,1) 80.1%,rgba(2,234,208,1) 100%);
+}
+    #contato, #contato .bg-contato {min-height: 903px;}
+    #contato .bg-contato {
+        background: url(../images/bg-contato.png) no-repeat 0 0 transparent;
+    }
+    #contato .col-12 {position: relative;}
+    #contato .formulario {
+        width: 50%;
+        padding: 2rem;
+        top: 3rem;
+        right: 0;
+        position: absolute;
+        border-radius: 10px;
+        background-color: var(--gray);
+    }
+        #contato .formulario label {display: block; margin-bottom: 0.2rem;}
+            #contato .formulario label.error {
+                color: #FF0000;
+                font-size: 0.8rem;
+                font-weight: 500;
+                margin: -2.35rem 0 1rem 0.5rem;
+            }
+        #contato .formulario input, #contato .formulario textarea {
+            width: 100%;
+            margin: 0 0 1rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: solid 1px var(--white);
+            background-color: var(--white);
+        }
+        #contato .formulario textarea {height: 100px;}
+        #contato .formulario button {
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 0.5rem 4rem;
+            transition: all 1s;
+            border-radius: 10px;
+            border: solid 1px var(--thirdColor);
+            background-color: var(--thirdColor);
+        }
+            #contato .formulario button:hover {border-color: var(--black);}
+
+@media screen and (max-width: 1600px) {
+    #contato .bg-contato {background-position: -30% 0;}
+}
+@media screen and (max-width: 1440px) {
+    #contato .bg-contato {background-position: -352px 0;}
+}
+@media screen and (max-width: 991px) {
+    #contato .bg-contato {background: none;}
+    #contato .formulario {width: 94%; right: 3%;}
 }
 
 #clientes {padding: 4rem 0;}
