@@ -2,6 +2,7 @@
     --white: #FFF;
     --black: #000;
     --gray: #EEEEEE;
+    --gray2: #E2E2E2;
     --secondColor: #11A193;
     --thirdColor: #00FFDA;
     --fourthColor: #00C6B8;
@@ -268,6 +269,74 @@ sub {bottom: -0.25em;}
         #chamada .info .destaque {font-size: 1.6rem;}
         #chamada .info span {font-size: 1.2rem;}
 }
+
+#beneficios {padding: 5rem 0 0; position: relative;}
+    #beneficios .bg1, #beneficios .bg2 {
+        width: 30%;
+        height: 40%;
+        z-index: 1; 
+        position: absolute;
+        background-color: var(--gray2);
+    }
+    #beneficios .bg1 {top: 0; right: 0; border-radius: 0 0 0 100px;}
+    #beneficios .bg2 {left: -30px; bottom: 160px; border-radius: 100px 0 0 0;}
+    #beneficios .container {z-index: 2; position: relative;}
+    #beneficios h2 {margin: 0 0 4rem;}
+        #beneficios h2 span {
+            font-weight: 500;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--thirdColor);
+        }
+    #beneficios .img {text-align: center; z-index: 1; position: relative;}
+    #beneficios .descricao {
+        min-height: 270px;
+        padding: 2rem;
+        border-radius: 20px;
+        z-index: 2;
+        position: relative;
+        background-color: var(--white);
+    }
+        #beneficios .descricao h3 {
+            width: 100%;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: -4rem 0 2rem;
+            padding: 0.8rem 1rem 0.8rem 1.6rem;
+            background-color: var(--thirdColor);
+        }
+            #beneficios .descricao h3 span {font-weight: 500;}
+
+#beneficios-detalhe {
+    width: 100%;
+    height: 280px;
+    margin-top: -160px;
+    background-color: var(--fourthColor);
+}
+
+@media screen and (max-width: 1140px) {
+    #beneficios .descricao h3 {font-size: 1.3rem;}
+        #beneficios .descricao h3 svg {max-width: 80px;}
+    #beneficios .descricao p {font-size: 0.9rem;}
+}
+@media screen and (max-width: 991px) {
+    #beneficios .descricao {padding: 2rem 1.4rem;}
+        #beneficios .descricao h3 {margin-bottom: 1rem;}
+            #beneficios .descricao h3 svg {display: none;}
+    #beneficios-detalhe {height: 220px;}
+}
+@media screen and (max-width: 764px) {
+    #beneficios {padding: 4rem 0 3rem;}
+    #beneficios .bg1, #beneficios .bg2, #beneficios-detalhe {display: none;}
+    #beneficios h2 {margin: 0 0 2rem;}
+    #beneficios .chamada-beneficios {margin: 2rem 0;}
+    #beneficios .descricao h3 svg {display: inline;}
+    #beneficios .descricao {min-height: auto;}
+}
+@media screen and (max-width: 620px) {#beneficios .tit-detalhe {display: none;}}
 
 #contato {
     width: 100%;    
