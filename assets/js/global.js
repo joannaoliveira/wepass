@@ -20,8 +20,24 @@ $( document ).ready(function() {
     };    
     $('.phone').mask(behavior, options);
 
-    $(".solicitar-analise").on( "click", function() {
-        $("#frmCotacao").get(0).scrollIntoView({behavior: 'smooth'});
+    $(".goToBeneficios").on( "click", function() {
+        $("#beneficios").get(0).scrollIntoView({behavior: 'smooth'});
+        return false;
+    });
+    $(".goToSaibaMais").on( "click", function() {
+        $("#sobre").get(0).scrollIntoView({behavior: 'smooth'});
+        return false;
+    });
+    $(".goToOrcamento").on( "click", function() {
+        $("#contato").get(0).scrollIntoView({behavior: 'smooth'});
+        return false;
+    });
+    $(".goToAdministrativo").on( "click", function() {
+        $("#sobre").get(0).scrollIntoView({behavior: 'smooth'});
+        return false;
+    });
+    $(".goToMorador").on( "click", function() {
+        $("#chamada").get(0).scrollIntoView({behavior: 'smooth'});
         return false;
     });
 
